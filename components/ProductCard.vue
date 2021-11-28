@@ -2,7 +2,7 @@
   <div class="product-card">
     <div class="header">
       <div class="information">
-        <img class="avatar" src="@/assets/比特啾啾.jpg" />
+        <img class="avatar" src="@/assets/avatar.jpg" />
         <p class="name">比特啾啾</p>
       </div>
 
@@ -25,7 +25,7 @@
         <span>69P</span>
       </div>
 
-      <img src="@/assets/美人搜查官.jpg" />
+      <img src="@/assets/product.jpg" />
     </div>
 
     <div class="footer">
@@ -77,7 +77,7 @@
     }
 
     .cooperation-models-num {
-      @apply w-[24px] h-[24px] flex items-center justify-center rounded-1/2 text-xs text-white bg-[#d6d6d6];
+      @apply w-[24px] h-[24px] flex items-center justify-center text-xs text-white rounded-1/2 bg-[#d6d6d6];
     }
   }
 
