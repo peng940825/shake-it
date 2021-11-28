@@ -1,5 +1,5 @@
 <script>
-import ProductCard from '@/components/ProductCard.vue'
+import ProductCard from '@/components/profile/ProductCard.vue'
 
 export default {
   components: { ProductCard },

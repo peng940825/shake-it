@@ -1,10 +1,10 @@
 <script>
+import Banner from '@/components/profile/Banner.vue'
+import Left from '@/components/profile/Left.vue'
+import Right from '@/components/profile/Right.vue'
+
 export default {
-  methods: {
-    handleColorBlock() {
-      this.$store.commit('handleColorBlock')
-    },
-  },
+  components: { Banner, Left, Right },
   computed: {
     isColorBlockOpen() {
       return this.$store.getters.isColorBlockOpen
@@ -15,31 +15,17 @@ export default {
 
 <template>
   <div>
-    <div class="banner bg-pink-700" @click="handleColorBlock"></div>
+    <Banner />
 
     <div class="profile" :class="{ 'bg-gray-700': isColorBlockOpen }">
-      <div class="left bg-amber-700"></div>
-      <div class="right" :class="{ 'bg-cyan-700': isColorBlockOpen }">
-        <NuxtChild />
-      </div>
+      <Left />
+      <Right />
     </div>
   </div>
 </template>
 
 <style lang="postcss" scoped>
-.banner {
-  @apply w-full h-[240px];
-}
-
 .profile {
   @apply w-full max-w-[1600px] flex mx-auto;
-
-  .left {
-    @apply min-w-[240px] mr-[100px] <md:hidden;
-  }
-
-  .right {
-    @apply w-full;
-  }
 }
 </style>
