@@ -16,6 +16,6 @@ export default {
 
 <style lang="postcss" scoped>
 .right {
-  @apply w-full;
+  @apply w-[80%] <xl:w-[75%] <md:w-full;
 }
 </style>
